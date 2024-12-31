@@ -1,0 +1,66 @@
+<!-- Sheva Haya Milano 
+ 105222036 
+ Tugas php form -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pengurus Himpunan Mahasiswa Ilmu Komputer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pendaftaran Pengurus Himpunan Mahasiswa Ilmu Komputer</h1>
+
+    <form action="proses.php" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required><br><br>
+
+        <label for="HP">Nomor HP:</label>
+        <input type="text" id="HP" name="HP" required><br><br>
+
+        <label for="angkatan">Angkatan:</label>
+        <select id="angkatan" name="angkatan" required>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select><br><br>
+
+        <label for="gender">Jenis Kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="Laki-laki" required>
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="female" name="gender" value="Perempuan" required>
+        <label for="female">Perempuan</label><br><br>
+
+        <label for="jabatan1">Pilihan Jabatan 1:</label>
+        <select id="jabatan1" name="jabatan1" required>
+            <option value="Sekretaris">Sekretaris</option>
+            <option value="Bendahara">Bendahara</option>
+            <option value="Internal">Internal</option>
+            <option value="Eksternal">Eksternal</option>
+            <option value="Pendidikan IT">Pendidikan IT</option>
+            <option value="Media Kreatif">Media Kreatif</option>
+        </select><br><br>
+
+        <label for="jabatan2">Pilihan Jabatan 2:</label>
+        <select id="jabatan2" name="jabatan2" required>
+            <option value="Sekretaris">Sekretaris</option>
+            <option value="Bendahara">Bendahara</option>
+            <option value="Internal">Internal</option>
+            <option value="Eksternal">Eksternal</option>
+            <option value="Pendidikan IT">Pendidikan IT</option>
+            <option value="Media Kreatif">Media Kreatif</option>
+        </select><br><br>
+
+        <label for="alasan">Alasan Anda Harus Diterima:</label><br>
+        <textarea id="alasan" name="alasan" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Kirim Pendaftaran">
+    </form>
+</body>
+</html>
